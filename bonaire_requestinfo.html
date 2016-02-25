@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+
+<head>
+
+<meta name="keywords" content="Bonaire Lodging, Bonaire Vacation Rentals,Bonaire,  places to stay, vacation rentals, accommodations,  vacation rental, resorts, lodging,  villa,  resort, hotel, condo,  scuba, diving,  snorkeling,  snorkel, Lighthouse Beach, windsurfing, kitesurfing, kiteboarding,  vacation">
+
+<meta name="description" content="2 Bedroom air conditioned rental home with pool and free private Wi-fi.  Townhouse accommodations on Bonaire at Lighthouse Beach Resort - only $109.00 per night">
+
+<meta name="generator" content="CoffeeCup Visual Site Designer, Version 6.0 Build 6 for Windows">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+<!-- 
+
+     This Website was created with CoffeeCup Visual Site Designer.
+
+     Copyright 2009, CoffeeCup Software, Inc.
+
+     http://www.coffeecup.com
+
+//-->
+
+<title> Bonaire Villa Request Information </title>
+
+
+
+<style type="text/css">
+
+.textstyle0 {font-family:Arial;font-weight:bold;font-style:normal;font-size:18pt;text-decoration:none;color:#c43c3c;}
+
+.textstyle1 {font-family:Arial;font-weight:bold;font-style:normal;font-size:8pt;text-decoration:none;color:#000000;}
+
+</style>
+
+
+
+<style type="text/css">
+
+div.Object640 { 
+  position: absolute; 
+  top:73px; 
+  left:43px; 
+  width: 600px; 
+  z-index:0; 
+  border: 1px solid white; 
+  background-color: #99CCFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #000088;
+  font-family: Arial;
+}
+
+div.Object640 table { width: auto; }
+
+div.Object640 input {
+  margin-left: 5px;
+}
+
+div.Object640 #info-request-form > div {
+  margin-bottom: 10px;
+}
+
+div.Object641 {
+	position:absolute;
+	top:13px;
+	left:510px;
+	z-index:1;
+}
+
+div.Object641 table { width: auto; }
+
+div.Object642 { position:absolute; top:58px; left:75px; width: 119px; z-index:2; }
+
+div.Object642 table { width: auto; }
+
+div.Object643 { position:absolute; top:22px; left:95px; z-index:3; }
+
+div.Object643 table { width: auto; }
+
+div.Object644 { position:absolute; top:743px; left:296px; z-index:4; }
+
+div.Object644 table { width: auto; }
+
+</style>
+
+<!--html inserted by user -->
+
+<META NAME="ROBOTS" CONTENT="FOLLOW"> 
+
+
+<META NAME="ROBOTS" CONTENT="all">
+
+
+
+
+<!--end of html inserted by user -->
+
+
+
+
+
+<!-- centering -->
+
+<style type="text/css">
+
+body {
+	margin: 0px;
+	padding : 0px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: #82ebfd;
+	background-image: url(files/waterbackground.jpg);
+}
+
+
+
+
+
+a:link {
+
+ color: #ff0000;
+
+}
+
+
+
+
+
+a:visited  {
+
+ color: #ff0000;
+
+}
+
+
+
+</style>
+
+<!-- --------- -->
+
+
+
+
+
+
+
+<!-- centering -->
+
+<style type="text/css">
+
+#container { position:relative; margin: 0px auto 0 auto; height: 100%; width:800px; text-align:left; padding-left:0px;}
+
+</style>
+
+
+
+
+
+<!-- centering -->
+
+<!-- Scripts for form submimssion -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./verify.notify.min.js"></script>
+<script type="text/javascript">
+function validate_and_submit_form() {
+  // validate the form
+  $("#info-request-form").validate(
+    function (success) {
+      if (success) submit_form();
+      else console.log('form validation failed');
+    }
+  );
+}
+
+function submit_form() {
+  // collect the form data
+  var form = document.getElementById("info-request-form");
+  
+  var email_body = "";
+  if (form.first_name.value) email_body += "First Name: "+form.first_name.value+"\n";
+  if (form.last_name.value) email_body += "Last Name: "+form.last_name.value+"\n";
+  if (form.email.value) email_body += "Email Address: "+form.email.value+"\n";
+  if (form.airline.value) email_body += "Airline: "+form.airline.value+"\n";
+  email_body += "Arrival Date: "+form.arrival_month.value+" "+form.arrival_day.value+" "+form.arrival_year.value+"\n";
+  if (form.arrival_time.value) email_body += "Arrival Time: "+form.arrival_time.value+" "+form.arrival_time_ampm.value+"\n";
+  email_body += "Departure Date: "+form.departure_month.value+" "+form.departure_day.value+" "+form.departure_year.value+"\n";
+  if (form.departure_time.value) email_body += "Departure Time: "+form.departure_time.value+" "+form.departure_time_ampm.value+"\n";
+  email_body += "Number of Adults: "+form.number_of_adults.value+"\n";
+  email_body += "Number of Children: "+form.number_of_children.value+"\n";
+  if (form.number_of_children.value > 0) {
+    for (var i=1; i<=form.number_of_children.value; i++) {
+      email_body += "Child "+i+" Age: "+form["child_"+i+"_age"].value+"\n";
+    }
+  }
+  if (form.pick_up_truck_rental.checked) email_body += "Interested in Pick Up Truck Rental \n";
+  if (form.car_rental.checked) email_body += "Interested in Car Rental \n";
+  if (form.dive_packages.checked) email_body += "Interested in Dive Packages \n";
+  
+  if (document.getElementById("additional-commnents").value) {
+    email_body += "Comments and Questions: "+document.getElementById("additional-commnents").value
+  }
+  
+  console.log(email_body);
+  
+  // send the email using Mandrill api
+  $.ajax({
+    type: "POST",
+    url: "https://api.sendgrid.com/api/mail.send.json",
+    data: {
+      'api_user': 'BrownBearLabs',
+      'api_key': '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',
+      'from': 'request@brownbearlabs.com',
+      //'to': 'info@bonairevilla.com'
+      'to': 'mzamkow@gmail.com',
+      'subject': 'New Information Request',
+      'text': email_body
+    }
+  });
+  
+  
+
+
+  
+  
+}
+</script>
+
+
+
+</head>
+
+
+
+<body  >
+
+
+
+
+
+<!-- centering -->
+
+<div id="container">
+
+<!-- --------- -->
+
+
+
+<table style="height:1000px;" width="800" border=0 cellspacing=0 cellpadding=0>
+
+<tr>
+
+<td>
+
+<br>
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+<div class="Object640">
+  <h1>KAS BIENTU DI PASAT</h1>
+  <h2>Request For Additional Information</h2>
+  <form id="info-request-form">
+    <div>
+      <span>First Name:</span>
+      <input type="text" name="first_name"/>
+      <span style="margin-left: 30px;">Last Name:</span>
+      <input type="text" name="last_name" style="width: 175px;"/>
+    </div>
+    <div>
+      <span>E-Mail Address:</span>
+      <input type="text" name="email" style="width: 225px;" data-validate="required,email"/>
+    </div>
+    <div>
+      <span>Airline:</span>
+      <input type="text" name="airline" style="width: 175px;"/>
+    </div>
+    <div id="arrival-info">
+      <span style="padding-right: 25px;">Planned Arrival Date:</span>
+      <select name="arrival_month">
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+      </select>
+      <select name="arrival_day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+      <select name="arrival_year">
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+      </select>
+      <span style="padding-left: 10px;">Time</span>
+      <input type="text" name="arrival_time" style="width: 40px;">
+      <select name="arrival_time_ampm">
+        <option>AM</option>
+        <option>PM</option>
+      </select>
+    </div>
+    <div id="departure-info">
+      <span>Planned Departure Date:</span>
+      <select name="departure_month">
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+      </select>
+      <select name="departure_day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+      <select name="departure_year">
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+      </select>
+      <span style="padding-left: 10px;">Time</span>
+      <input type="text" name="departure_time" style="width: 40px;">
+      <select name="departure_time_ampm">
+        <option>AM</option>
+        <option>PM</option>
+      </select>
+    </div>
+    <div>
+      <span>Number of Adults:</span>
+      <select name="number_of_adults">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+    </div>
+    <div>
+      <span>Number of Children:</span>
+      <select name="number_of_children">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <span style="padding-left: 15px;">Ages of Children:</span>
+      <select name="child_1_age">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+      </select>
+      <select name="child_2_age">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+      </select>
+      <select name="child_3_age">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+      </select>
+      <select name="child_4_age">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+      </select>
+    </div>
+    <div>
+      <span>I am also interested in:</span>
+      <span style="font-size: 12px">
+        <input type="checkbox" name="pick_up_truck_rental"/><span style="padding-right: 10px;">Pick Up Truck Rental</span>
+        <input type="checkbox" name="car_rental"/><span style="padding-right: 10px;">Car Rental</span>
+        <input type="checkbox" name="dive_packages"/><span>Dive Packages</span>
+      </span>
+    </div>
+    <div>
+      <span>Additional Comments or Questions:</span>
+      <br/>
+      <textarea id="additional-commnents" style="width: 600px; height: 60px"></textarea>
+    </div>
+    <div>
+      <input type="button" value="Submit" onclick="validate_and_submit_form();" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+    
+  </form>
+</div>
+
+
+
+<div class="Object641"><a href="index.html" ><img style="border:none;" src="files/IMG_108.jpg"  alt="Main Page" width=175 height=55></a></div>
+
+
+
+<div class="Object642"></div>
+
+
+
+<div class="Object643"><table border=0 cellspacing=0 cellpadding=0><tr><td valign="top" align="center"><div class="text-align:center;margin-left:0px;text-indent:0px;"><span class="textstyle0">LIGHTHOUSE BEACH RESORT #13<br>
+
+</span></div></td></tr></table></div>
+
+
+
+<div class="Object644"><table border=0 cellspacing=0 cellpadding=0><tr><td valign="top" align="left"><div class="text-align:left;margin-left:0px;text-indent:0px;"><span class="textstyle1">Copyright 2006-2010 Gregg Babcock<br>
+
+</span></div></td></tr></table></div>
+
+</div>
+
+<!-- --------- -->
+
+
+
+
+
+
+
+</body>
+
+</html>
+
